@@ -1,0 +1,137 @@
+/* quiz.css */
+
+/* Reset some default styles */
+body, h1, h3, p, button, label {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Set up the container and its children */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.quiz-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.question-count {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 50px;
+    height: 3px;
+    background: #ff7e5f;
+    border: none;
+    margin: 20px auto;
+    animation: growIn 1s ease-out;
+}
+
+.question {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+.options {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+label:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #feb47b;
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes growIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 50px;
+        opacity: 1;
+    }
+}

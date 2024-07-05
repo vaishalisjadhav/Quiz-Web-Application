@@ -1,0 +1,118 @@
+/* index.css */
+
+/* Reset some default styles */
+body, h1, h3, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Set up the container and its children */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.index-logo {
+    width: 100px;
+    margin-bottom: 20px;
+    animation: rotateIn 1s ease-out;
+}
+
+.quiz-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+hr {
+    width: 50px;
+    height: 3px;
+    background: #ff7e5f;
+    border: none;
+    margin: 20px auto;
+    animation: growIn 1s ease-out;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+button {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #feb47b;
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes growIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 50px;
+        opacity: 1;
+    }
+}
