@@ -2,29 +2,29 @@
 
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Madrid", "Paris", "Berlin", "Rome"],
-        answer: "Paris"
+        question: "Which built-in method returns the character at the specified index?",
+        options: ["characterAt()", "getCharAt()", "charAt()", "None of the above"],
+        answer: "charAt()"
     },
     {
-        question: "What is the capital of Spain?",
-        options: ["Madrid", "Paris", "Berlin", "Rome"],
-        answer: "Madrid"
+        question: "Which of the following function of String object returns the characters in a string between two indexes into the string?",
+        options: ["slice()", "split()", "substr()", "substring()"],
+        answer: "substring()"
     },
     {
-        question: "What is the capital of Germany?",
-        options: ["Madrid", "Paris", "Berlin", "Rome"],
-        answer: "Berlin"
+        question: "JavaScript file has an extension of?",
+        options: [".java", ".js", ".javascript", ".xml"],
+        answer: ".js"
     },
     {
-        question: "What is the capital of Italy?",
-        options: ["Madrid", "Paris", "Berlin", "Rome"],
-        answer: "Rome"
+        question: "Which function is used to parse a String to Int?",
+        options: ["integer.parse", "int.parse", "parse.int", "None"],
+        answer: "int.parse"
     },
     {
-        question: "What is the capital of Portugal?",
-        options: ["Lisbon", "Paris", "Berlin", "Rome"],
-        answer: "Lisbon"
+        question: "Which event is used to check an empty text box?",
+        options: ["onClick()", "onFocus()", "onBlur()", "None"],
+        answer: "onBlur()"
     }
 ];
 
