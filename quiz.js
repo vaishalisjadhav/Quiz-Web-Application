@@ -37,9 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionCountElement = document.querySelector(".question-count");
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-prev");
-    const resultElement = document.querySelector(".result");
-    const resultScoreElement = document.querySelector(".result-score");
-    const btnReplay = document.querySelector(".btn-replay");
 
     function loadQuestion(index) {
         const questionData = questions[index];
@@ -65,19 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showResult() {
-        resultElement.style.display = 'block';
-        resultScoreElement.textContent = `You got ${score} out of ${questions.length} questions right.`;
-        btnNext.style.display = 'none';
-        btnPrev.style.display = 'none';
-    }
-
-    function resetQuiz() {
-        currentQuestionIndex = 0;
-        score = 0;
-        resultElement.style.display = 'none';
-        btnNext.style.display = 'inline-block';
-        btnPrev.style.display = 'inline-block';
-        loadQuestion(currentQuestionIndex);
+        window.location.href = `results.html?score=${score}`;
     }
 
     btnNext.addEventListener("click", () => {
@@ -95,10 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
             currentQuestionIndex--;
             loadQuestion(currentQuestionIndex);
         }
-    });
-
-    btnReplay.addEventListener("click", () => {
-        resetQuiz();
     });
 
     loadQuestion(currentQuestionIndex);
