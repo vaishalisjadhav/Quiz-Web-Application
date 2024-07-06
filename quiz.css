@@ -104,6 +104,40 @@ button:hover {
     transform: scale(1.1);
 }
 
+.result {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.result-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-score {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.btn-replay {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-replay:hover {
+    background: #feb47b;
+    transform: scale(1.1);
+}
+
 /* Keyframes for animations */
 @keyframes fadeIn {
     from {
